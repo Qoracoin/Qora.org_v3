@@ -1,0 +1,100 @@
+/* These are just a test styles - you don't need them in your project */
+
+
+.page-title {
+    font: 400 40px/1.5 Open Sans, sans-serif;
+    text-align: center;
+}
+
+.circle {
+    width: 120px;
+    margin: 6px 6px 20px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.circle canvas {
+    vertical-align: top;
+}
+
+.circle strong {
+	color: #fff;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 30px;
+}
+
+.circle strong i {
+    font-style: normal;
+    font-size: 0.6em;
+    font-weight: normal;
+}
+
+.circle span {
+	font-family: 'Montserrat', sans-serif !important;
+    display: block;
+    color: #fff;
+    margin-top: 12px;
+}
+
+p {
+    margin: 40px 0;
+}
+
+.install {
+    margin: 50px 0;
+}
+
+.install code {
+    padding: 6px 12px;
+    display: inline-block;
+    font: 13px/20px Courier New, Liberation Mono, monospase;
+    background-color: #333333;
+    border-radius: 4px;
+    margin: 5px 0;
+    white-space: nowrap;
+}
+
+.install a {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 6px 12px;
+    line-height: 20px;
+    background-color: #111;
+    color: #fff;
+    border-radius: 3px;
+    text-decoration: none;
+    margin: 5px 0;
+    transition: all .3s;
+}
+
+.install a:hover {
+    background-color: #222;
+}
+
+.credits {
+    color: #aaa;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.credits img {
+    margin-left: 4px;
+    border-radius: 4px;
+    vertical-align: middle;
+}
+
+@media (max-height: 600px), (max-width: 480px) {
+    .credits {
+        position: inherit;
+    }
+}
+
