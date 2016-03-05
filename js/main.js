@@ -2,7 +2,7 @@
         url:'https://poloniex.com/public?command=returnOrderBook&currencyPair=BTC_QORA&depth=1',
         complete: function (response) {
             response = JSON.parse(response.responseText);
-            $('#output').html("1 QORA = " + Math.round(((response.asks[0][0] + response.bids[0][0])/2)*100000000)  + " Satoshi");
+            $('#output').html("1 QORA = " + Math.round(((response.asks[0][0]*100000000 + response.bids[0][0])*100000000)/2)  + " Satoshi");
         }
     });
 
