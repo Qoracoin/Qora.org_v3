@@ -1,7 +1,8 @@
     $.ajax({
-        url:'http://coinmarketcap-nexuist.rhcloud.com/api/qora/price',
+        url:'https://poloniex.com/public?command=returnOrderBook&currencyPair=BTC_QORA&depth=1',
         complete: function (response) {
-            $('#output').html("1 QORA = " + JSON.parse(response.responseText).usd + " USD");
+            response = JSON.parse(response.responseText);
+            $('#output').html("1 QORA = " + Math.round(((response.asks[0][0] + response.asks[1][0])/2)*100000000)  + " Satoshi");
         }
     });
 
